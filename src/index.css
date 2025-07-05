@@ -1,1 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
 @import "tailwindcss";
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-white: #efedec;
+  --color-normal-white: #d4d1d1;
+}
+
+@utility flex-center {
+  @apply flex justify-between items-center;
+}
+
+@utility icon-image {
+  @apply w-6 h-6 object-contain align-middle inline-block;
+}
+
+@utility logo-image {
+  @apply h-10 w-auto object-contain;
+}
+
+.karla-font {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
